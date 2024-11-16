@@ -19,9 +19,10 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--text);
     background: var(--bg);
-    margin-top: 100px; /* Ajusta según la altura real de la navbar */
+    margin-top: 100px;
 }
 
+/* Navigation Bar (Unificada) */
 .navbar {
     background-color: var(--white) !important;
     padding: 1rem 2rem;
@@ -77,15 +78,13 @@ body {
     position: relative;
 }
 
-/* Estilos para el logo */
 .logo {
     width: 250px;
-    margin: 0 auto 2rem auto; /* Centramos horizontalmente */
+    margin: 0 auto 2rem auto;
     display: block;
     animation: float 3s ease-in-out infinite;
 }
 
-/* Animación flotante */
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -107,13 +106,13 @@ body {
 }
 
 .dates-info {
-    background-color: rgba(255, 255, 255, 0.1); /* Ajuste del color de fondo */
+    background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     margin: 2rem auto;
     padding: 1.5rem;
     border-radius: 15px;
-    width: 90%; /* Para hacerlo responsivo */
-    max-width: 800px; /* Ancho máximo en pantallas grandes */
+    width: 90%;
+    max-width: 800px;
     line-height: 1.6;
     font-size: 1.2rem;
 }
@@ -154,8 +153,6 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: clamp(1.5rem, 6vw, 2rem);
     color: var(--gold);
-
-
 }
 
 .product-card:hover {
@@ -170,9 +167,8 @@ body {
     margin: 1rem 0;
 }
 
-/* Estilos para los modales */
 .modal {
-    display: none; /* Ocultar por defecto */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -222,13 +218,9 @@ body {
 .menu-list li {
     margin-bottom: 1rem;
     font-size: 1rem;
-}
-
-.menu-list li  {
     color: var(--red);
 }
 
-/* Estilos para los copos de nieve */
 .snowflake {
     position: fixed;
     top: -10%;
@@ -238,7 +230,7 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 1;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 @keyframes fall {
@@ -250,7 +242,6 @@ body {
     }
 }
 
-/* Footer */
 footer {
     padding: 2rem;
     text-align: center;

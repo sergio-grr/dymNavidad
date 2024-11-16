@@ -6,9 +6,9 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -17,9 +17,9 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* Navigation Bar */
+/* Navigation Bar (Unificada) */
 .navbar {
-    background-color: var(--white);
+    background-color: var(--white) !important;
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -29,8 +29,6 @@ body {
 }
 
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +66,7 @@ body {
 .social-icons a:hover {
     color: var(--primary-color);
 }
+
 /* Hero Section */
 .hero {
     background-color: var(--secondary-color);
@@ -105,6 +104,7 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     animation: slideUp 1.5s ease-out;
 }
+
 /* Menu Card Styles */
 .menu-container {
     max-width: 900px;
@@ -194,8 +194,6 @@ body {
     left: 0;
 }
 
-
-
 /* Footer */
 footer {
     background-color: var(--white);
@@ -203,6 +201,7 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
+
 /* Animations */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
@@ -224,19 +223,6 @@ footer {
         transform: translateY(0);
     }
 }
-/* Animations */
-@keyframes fadeIn {
-    from { 
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to { 
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -244,20 +230,35 @@ footer {
         margin: 80px 1rem 2rem;
         padding: 1rem;
     }
-
     .menu-header h1 {
         font-size: 2.5rem;
     }
-
     .dish-name {
         font-size: 1rem;
     }
-
     .price {
         font-size: 1.1rem;
     }
+    .nav-links {
+        gap: 1rem;
+    }
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
 
-    .arroz-info {
-        padding: 1.5rem;
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 15px;
+        max-width: 95%;
+        max-height: 85%;
+    }
+    .modal-image {
+        max-width: 250px;
+    }
+    .close {
+        top: 5px;
+        right: 5px;
+        font-size: 14px;
     }
 }
