@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicias & Manjarex - Especial de Navidad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Incluimos la librería de Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="porEncargoNavidad.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <!-- Puedes agregar más enlaces aquí si lo deseas -->
+            </ul>
+            <div class="social-icons">
+                <a href="https://facebook.com/deliciasymanjarex" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/deliciasymanjarex" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="assets/logoWhite.png" alt="Logo Delicias & Manjarex" class="logo">
+        </div>
+    </section>
+    <!-- Encabezado de Navidad -->
+    <div class="christmas-header">
+        <h1 class="title">Especial de Navidad</h1>
+        <p>Delicias caseras para tu mesa navideña</p>
+    </div>
+
+    <!-- Información de Fechas -->
+    <div class="dates-info">
+        <p><span class="date-highlight">24 de diciembre (Nochebuena)</span><br>
+        <span class="deadline">Fecha límite para encargo: 21 de diciembre</span></p>
+        <p><span class="date-highlight">31 de diciembre (Nochevieja)</span><br>
+        <span class="deadline">Fecha límite para encargo: 28 de diciembre</span></p>
+    </div>
+
+    <!-- Grid de Productos -->
+    <div class="products-grid">
+        <div class="product-card" data-modal="modalEntrantes">
+            <h2>Entrantes</h2>
+        </div>
+
+        <div class="product-card" data-modal="modalPescados">
+            <h2>Pescados y Mariscos</h2>
+        </div>
+
+        <div class="product-card" data-modal="modalCarnes">
+            <h2>Carnes</h2>
+        </div>
+    </div>
+
+    <!-- Modales para cada categoría -->
+
+    <!-- Modal Entrantes -->
+    <div class="modal" id="modalEntrantes">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Entrantes</h2>
+            <ul class="menu-list">
+                <li><strong>Jamón Ibérico 100% por "Extreibericos" (100 gr)</strong> - 16€</li>
+                <li><strong>Bandeja de quesos por "Extreibericos"</strong> - 55€</li>
+                <li><strong>Carpaccio de Atún con Mayonesa de Cilantro y Lima</strong> - 12€</li>
+                <li><strong>Carpaccio de Ibérico con Mayonesa de Pimiento y Queso curado de oveja</strong> - 12€</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal Pescados y Mariscos -->
+    <div class="modal" id="modalPescados">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Pescados y Mariscos</h2>
+            <ul class="menu-list">
+                <li><strong>Crema de marisco con gambones</strong> - 10€</li>
+                <li><strong>Zarzuela de marisco al señorito</strong> - 12€</li>
+                <li><strong>Salmón al Papillote con verduras salteadas</strong> - 17€</li>
+                <li><strong>Merluza Rellena a lo Manuel Espada</strong> - 16€</li>
+                <li><strong>Corvina Salvaje a la plancha con Bimi Tostado sobre Crema de manzana y curry suave</strong> - 19€</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal Carnes -->
+    <div class="modal" id="modalCarnes">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Carnes</h2>
+            <ul class="menu-list">
+                <li><strong>Solomillo relleno de jamón con salsa de setas</strong> - 15€</li>
+                <li><strong>Canelón de rabo de toro sobre Parmentier con Salsa del propio Guiso</strong> - 14,5€</li>
+                <li><strong>Pierna de Cordero Lechal Asada con Panaderas (Unidades Limitadas)</strong> - 25€</li>
+                <li><strong>Paletilla de Cordero Lechal Asada con Panaderas (Unidades Limitadas)</strong> - 28€</li>
+                <li><strong>Cochinillo Asado con panaderas, Lechuga y tomate (Unidades Limitadas)</strong> - 150€</li>
+                <li><strong>Cachopo de ternera con Jamón y queso</strong> - 15€</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Delicias & Manjarex. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para generar los copos de nieve y controlar los modales -->
+    <script src="porEncargoNavidad.js"></script>
+
+</body>
+</html>
